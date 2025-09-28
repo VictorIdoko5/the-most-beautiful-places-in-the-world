@@ -93,6 +93,20 @@ html,body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--text
   background: #ddd;
   color: black;
 }
+/* Animated gradient background */
+.hero {
+  padding: 60px 0;
+  background: linear-gradient(-45deg, #0ea5a4, #3bc9db, #99e9f2, #e6f7f5);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: var(--text);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 /* Animation */
 @keyframes fadeIn {
