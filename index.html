@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Most Beautiful Places in the World</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">WorldBeauty</a>
+      <nav class="nav">
+        <a href="#featured">Featured</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Discover the Most Beautiful Places in the World</h1>
+        <p class="lead">From turquoise seas to misty mountains, find inspiration for your next adventure.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#featured">Explore Featured</a>
+          <a class="muted" href="#gallery">See Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="container featured">
+      <h2>Featured Destinations</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/bora-bora.jpg" alt="Bora Bora lagoon">
+          <h3>Bora Bora, French Polynesia</h3>
+          <p class="muted">Turquoise lagoon and iconic overwater bungalows.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/santorini.jpg" alt="Santorini sunset">
+          <h3>Santorini, Greece</h3>
+          <p class="muted">Whitewashed houses with stunning Aegean sunsets.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/banff.jpg" alt="Banff National Park lake">
+          <h3>Banff, Canada</h3>
+          <p class="muted">Emerald lakes surrounded by the Rockies.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="assets/machu-picchu.jpg" alt="Machu Picchu, Peru">
+        <img src="assets/plitvice.jpg" alt="Plitvice Lakes, Croatia">
+        <img src="assets/reef.jpg" alt="Great Barrier Reef, Australia">
+        <img src="assets/amalfi.jpg" alt="Amalfi Coast, Italy">
+        <img src="assets/kyoto.jpg" alt="Kyoto Temple, Japan">
+        <img src="assets/serengeti.jpg" alt="Serengeti, Tanzania">
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p class="muted">This site showcases breathtaking destinations around the world. Each place is chosen for its beauty and inspiration for travelers and dreamers alike.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form onsubmit="event.preventDefault();alert('Demo form — not connected yet')">
+        <input placeholder="Your name" required>
+        <input placeholder="Email" type="email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container muted">© 2025 WorldBeauty • Images are placeholders</div>
+  </footer>
+
+  <script src=".js"></script>
+</body>
+</html>
